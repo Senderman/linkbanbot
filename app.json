@@ -1,0 +1,20 @@
+{
+  "name": "LinkBannerBot",
+  "description": "Bot for banning link spammers",
+  "repository": "https://github.com/Senderman/linkbanbot",
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "env": {
+    "username": {
+      "description": "Telegram Bot Username without @"
+    },
+    "token": {
+      "description": "Telegram Bot Token"
+    },
+    "chat_id": {
+      "description": "Chat ID where the bot shouild work"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+bot: java -jar build/libs/linkbannerbot-1.0-all.jar
