@@ -90,5 +90,13 @@ public class BotHandler extends com.annimon.tgbotsmodule.BotHandler {
                 .setChatId(message.getChatId())
                 .setUserId(message.getFrom().getId())
                 .callAsync(this);
+        Methods.deleteMessage()
+                .setChatId(message.getChatId())
+                .setMessageId(message.getMessageId())
+                .callAsync(this);
+        Methods.sendMessage()
+                .setChatId(message.getChatId())
+                .setText("Пользователь забанен за ссылку: " + message.getFrom().getFirstName())
+                .callAsync(this);
     }
 }
